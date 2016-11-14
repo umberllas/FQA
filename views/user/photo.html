@@ -1,0 +1,39 @@
+{{include '../share/header'}}
+{{include '../share/navbar'}}
+<div class="container">
+	<form>
+		<div class="form-group textarea-font">
+			<input type="file" name="header">
+		</div>
+		<button class="btn btn-success form-control">上传头像</button>
+	</form>
+</div>
+
+<div class="container question">
+	{{each all as a i}}
+        <ul class="list-group" data-id={{a.id}}>
+            <li class="list-group-item list-group-item-success list-relative">
+                <div class="list-header">
+                    <img src=uploads/{{a.header}} onerror="this.src ='images/icon.jpg'" alt="">
+                    <div class="info">
+                        <span>{{a.username}}</span>
+                        <span>{{a.time | getTime}}</span>
+                    </div>
+                </div>
+                <div class="list-body">
+                    <p>{{a.content}}</p>
+                </div>
+                <button class="btn btn-success answer">我来回答<tton>
+            </li>
+            {{if a.answer}}
+            {{each a.answer as an}}
+                {{include '../answers' an}}
+            {{/each}}
+            {{/if}}
+        </ul>
+    {{/each}}
+</div>
+
+<script src='js/user.js'></script>
+{{include '../share/modal'}}
+{{include '../share/footer'}}

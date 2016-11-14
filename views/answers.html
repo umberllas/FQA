@@ -1,0 +1,13 @@
+
+	<li class="list-group-item list-group-item-success list-relative">
+		<div class="list-header pull-right">
+			<img src={{"uploads/" + header}} onerror="this.src='images/icon.jpg'" alt="" class="pull-left">
+			<div class="info pull-right">
+				<span>{{username}}</span>
+				<span>{{time | getTime}}</span>
+			</div>
+		</div>				
+		<div class="list-body">
+			<p>{{content}}</p>
+		</div>
+	</li>
