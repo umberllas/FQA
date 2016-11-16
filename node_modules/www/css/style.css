@@ -1,0 +1,85 @@
+@media (max-width:768px){
+	.navbar-title{
+		float:right;
+	}
+}
+.navbar-title{
+	margin-right:0;
+	cursor:pointer;
+}
+
+
+.navbar-login{
+	float:none;
+	margin-top:15px;
+	margin-bottom:15px;
+	color:#9d9d9d;
+	font-size:18px;
+	text-align:center;
+	line-height:20px;
+	cursor:pointer;
+}
+
+.normal{
+	font-size:14px;
+	margin-right:10px;
+}
+
+body{
+	padding:65px;
+}
+
+.textarea-font{
+	position:relative;
+}
+.textarea-font textarea{
+	padding-bottom:20px;
+	font-size:16px;
+}
+.textarea-font span{
+	position:absolute;
+	right:20px;
+	bottom:20px;
+}
+
+#user img{
+	width:25px;
+	height:25px;
+	border-radius:15px;
+	margin-top:-5px;
+}
+
+
+.list-header{
+	overflow:hidden;
+}
+.list-relative{
+	overflow:hidden;
+	position:relative;
+}
+.list-header img{
+	width:64px;
+	height:64px;
+	border-radius:64px;
+	float:left;
+}
+.info {
+	float:left;
+	margin-left:20px;
+	line-height:30px;
+}
+.info span{
+	display:block;
+}
+.list-body{
+	width:90%;
+	margin:30px auto;
+}
+.list-relative button{
+	position: absolute;
+	right:20px;
+	bottom:20px;
+}
+.clear{
+	clear:both;
+}
